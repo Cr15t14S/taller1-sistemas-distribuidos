@@ -1,0 +1,12 @@
+﻿// E4 y E5 - Estado durante la particion (Nodo 1 aislado, Nodo 4 elegido nuevo PRIMARY en term 2)
+{
+  set: 'rs-taller',
+  myState: 1,
+  term: Long('2'),
+  members: [
+    { _id: 0, name: '100.124.175.89:27017', health: 0, state: 8, stateStr: '(not reachable/healthy)', lastHeartbeatMessage: "Couldn't get a connection within the time limit" },
+    { _id: 1, name: '100.98.174.25:27017', health: 1, state: 2, stateStr: 'SECONDARY', syncSourceHost: '100.72.188.70:27017' },
+    { _id: 2, name: '100.72.188.70:27017', health: 1, state: 1, stateStr: 'PRIMARY', electionDate: ISODate('2026-11-10T19:13:05.000Z') }
+  ],
+  ok: 1
+}

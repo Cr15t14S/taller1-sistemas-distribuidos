@@ -1,0 +1,11 @@
+﻿// E5 - Estado tras reconexion y convergencia (Nodo 1 reintegrado como SECONDARY, Nodo 4 mantiene PRIMARY)
+{
+  set: 'rs-taller',
+  term: Long('2'),
+  members: [
+    { _id: 0, name: '100.124.175.89:27017', health: 1, state: 2, stateStr: 'SECONDARY', syncSourceHost: '100.72.188.70:27017' },
+    { _id: 1, name: '100.98.174.25:27017', health: 1, state: 2, stateStr: 'SECONDARY', syncSourceHost: '100.72.188.70:27017' },
+    { _id: 2, name: '100.72.188.70:27017', health: 1, state: 1, stateStr: 'PRIMARY' }
+  ],
+  ok: 1
+}

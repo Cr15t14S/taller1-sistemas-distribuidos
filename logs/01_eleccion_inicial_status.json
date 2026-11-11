@@ -1,0 +1,14 @@
+﻿// E4 - Estado inicial del Replica Set (Nodo 1 como PRIMARY)
+{
+  set: 'rs-taller',
+  myState: 1,
+  term: Long('1'),
+  votingMembersCount: 3,
+  writeMajorityCount: 2,
+  members: [
+    { _id: 0, name: '100.124.175.89:27017', health: 1, state: 1, stateStr: 'PRIMARY' },
+    { _id: 1, name: '100.98.174.25:27017', health: 1, state: 2, stateStr: 'SECONDARY', syncSourceHost: '100.124.175.89:27017' },
+    { _id: 2, name: '100.72.188.70:27017', health: 1, state: 2, stateStr: 'SECONDARY', syncSourceHost: '100.124.175.89:27017' }
+  ],
+  ok: 1
+}
