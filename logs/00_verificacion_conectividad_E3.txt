@@ -1,0 +1,24 @@
+=== REGISTRO DE VERIFICACION DE CONECTIVIDAD INICIAL (ENTREGABLE E3) ===
+
+[Prueba 1: Nodo 2 (daniel@100.118.94.6) -> Nodo 3 (nodonat@100.98.174.25)]
+daniel@nodo2:~$ ping -c 4 100.98.174.25
+PING 100.98.174.25 (100.98.174.25) 56(84) bytes of data.
+64 bytes from 100.98.174.25: icmp_seq=1 ttl=64 time=824 ms
+64 bytes from 100.98.174.25: icmp_seq=2 ttl=64 time=215 ms
+64 bytes from 100.98.174.25: icmp_seq=3 ttl=64 time=219 ms
+64 bytes from 100.98.174.25: icmp_seq=4 ttl=64 time=212 ms
+--- 100.98.174.25 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3067ms
+rtt min/avg/max/mdev = 211.885/367.506/823.939/263.535 ms
+
+[Prueba 2: Nodo 3 (nodonat@100.98.174.25) -> Nodo 1 (nodocris@100.124.175.89)]
+nodonat@nodo3:~$ ping -c 4 100.124.175.89
+4 packets transmitted, 4 received, 0% packet loss, time 3007ms
+rtt min/avg/max/mdev = 145.103/150.159/155.240/3.599 ms
+nodonat@nodo3:~$ ssh nodocris@100.124.175.89 -> Conexion exitosa por llave publica (Ubuntu 26.04.1 LTS)
+
+[Prueba 3: Nodo 1 (nodocris@100.124.175.89) -> Nodo 4 (nodoana@100.72.188.70)]
+nodocris@nodo1:~$ ping -c 4 100.72.188.70
+4 packets transmitted, 4 received, 0% packet loss, time 3021ms
+rtt min/avg/max/mdev = 131.407/133.830/136.795/2.245 ms
+nodocris@nodo1:~$ ssh nodoana@100.72.188.70 -> Conexion exitosa por llave publica (Ubuntu 26.04.1 LTS)
